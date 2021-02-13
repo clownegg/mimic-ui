@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "license": "MIT",
   "private": true,
+  "repository": "https://github.com/clownegg/mimic",
   "scripts": {
     "build": "rollup -c"
   },
