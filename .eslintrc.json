@@ -1,0 +1,47 @@
+{
+  "root": true,
+  "env": {
+    "node": true,
+    "browser": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "plugin:import/errors",
+    "plugin:import/typescript",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:vue/vue3-strongly-recommended"
+  ],
+  "plugins": [
+    "import",
+    "@typescript-eslint"
+  ],
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "tsx": true
+    },
+    "vueFeatures": {
+      "filter": true,
+      "interpolationAsNonHTML": true
+    },
+    "parser": "@typescript-eslint/parser"
+  },
+  "rules": {
+    "import/order": "error"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".ts",
+          ".tsx",
+          ".json"
+        ]
+      }
+    }
+  }
+}

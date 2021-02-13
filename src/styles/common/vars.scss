@@ -1,0 +1,39 @@
+$--color-white: #ffffff !default;
+$--color-black: #000000 !default;
+
+$--color-dark: #222222 !default;
+$--color-primary: #409eff !default;
+$--color-success: #67c23a !default;
+$--color-warning: #e6a23c !default;
+$--color-danger: #f56c6c !default;
+
+/*
+############################
+  Text
+############################
+*/
+
+$--color-text-regular: #606266 !default;
+$--color-text-placeholder: #c0c4cc !default;
+
+/*
+############################
+  Border
+############################
+*/
+$--border-color-base: #dcdfe6 !default;
+$--border-color-lighter: #ebeef5 !default;
+
+/*
+############################
+  Button
+############################
+*/
+$--button-default-font-color: $--color-text-regular !default;
+$--button-default-background-color: $--color-white !default;
+$--button-default-border-color: $--border-color-base !default;
+$--button-hover-background-color: #f9f9f9 !default;
+
+$--button-disabled-font-color: $--color-text-placeholder !default;
+$--button-disabled-background-color: $--color-white !default;
+$--button-disabled-border-color: $--border-color-lighter !default;
