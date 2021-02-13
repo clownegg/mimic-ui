@@ -3,9 +3,9 @@ const sass = require('gulp-dart-sass');
 const { src, dest, series } = require('gulp');
 
 const compile = () => {
-  return src('src/**/*.scss')
+  return src('src/styles/*.scss')
     .pipe(sass.sync({ outputStyle: 'compressed' }))
-    .pipe(dest('dist'));
+    .pipe(dest('styles'));
 };
 
 exports.build = series(compile);
