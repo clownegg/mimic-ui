@@ -1,7 +1,5 @@
-import path from 'path';
 import vue from 'rollup-plugin-vue';
-import ts from 'rollup-plugin-typescript';
-import styles from 'rollup-plugin-styles';
+import ts from 'rollup-plugin-typescript2';
 import { terser } from 'rollup-plugin-terser';
 
 export default [
@@ -16,15 +14,12 @@ export default [
     },
     plugins: [
       terser(),
-      vue(),
-      ts({
-        tsconfig: path.resolve(__dirname, 'tsconfig.json'),
+      vue({
+        target: 'browser',
+        css: false,
+        exposeFilename: false,
       }),
-      styles({
-        mode: ['extract', 'index.scss'],
-        minimize: true,
-        sourceMap: true,
-      }),
+      ts(),
     ],
   },
 ];
