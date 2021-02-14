@@ -1,6 +1,7 @@
 $--color-white: #ffffff !default;
 $--color-black: #000000 !default;
 
+$--color-info: #909399 !default;
 $--color-dark: #222222 !default;
 $--color-primary: #409eff !default;
 $--color-success: #67c23a !default;
@@ -22,6 +23,7 @@ $--color-text-placeholder: #c0c4cc !default;
 ############################
 */
 $--border-color-base: #dcdfe6 !default;
+$--border-color-light: #e4e7ed !default;
 $--border-color-lighter: #ebeef5 !default;
 
 /*
@@ -37,3 +39,17 @@ $--button-hover-background-color: #f9f9f9 !default;
 $--button-disabled-font-color: $--color-text-placeholder !default;
 $--button-disabled-background-color: $--color-white !default;
 $--button-disabled-border-color: $--border-color-lighter !default;
+
+/*
+############################
+  Input
+############################
+*/
+$--input-font-color: $--color-text-regular !default;
+$--input-background-color: $--color-white !default;
+$--input-border-color: $--border-color-base !default;
+$--input-hover-border-color: $--color-primary !default;
+
+$--input-disable-background-color: #f5f7fa !default;
+$--input-disable-border-color: $--border-color-light !default;
+$--input-disable-text-color:  $--color-text-placeholder !default;

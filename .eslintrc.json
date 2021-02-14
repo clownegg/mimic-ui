@@ -31,7 +31,15 @@
     "parser": "@typescript-eslint/parser"
   },
   "rules": {
-    "import/order": "error"
+    "import/order": "error",
+    "vue/max-attributes-per-line": "off",
+    "vue/html-self-closing": ["error", {
+      "html": {
+        "void": "always",
+        "normal": "always",
+        "component": "always"
+      }
+    }]
   },
   "settings": {
     "import/resolver": {
