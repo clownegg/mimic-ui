@@ -1,3 +1,31 @@
+@mixin button-plain($color) {
+  color: $color;
+  background: mix($--color-white, $color, 90%);
+  border-color: mix($--color-white, $color, 60%);
+
+  &:hover {
+    color: $--color-white;
+    background: $color;
+    border-color: $color;
+  }
+
+  &:active {
+    color: $--color-white;
+    background: mix($--color-black, $color, 10%);
+    border-color: mix($--color-black, $color, 20%);
+  }
+
+  &.is-disabled {
+    &,
+    &:hover,
+    &:active {
+      color: mix($--color-white, $color, 40%);
+      background-color: mix($--color-white, $color, 90%);
+      border-color: mix($--color-white, $color, 80%);
+    }
+  }
+}
+
 @mixin button-variant($color, $background-color, $border-color) {
   color: $color;
   background: $background-color;
@@ -24,5 +52,9 @@
       background-color: mix($background-color, $--color-white);
       border-color: mix($border-color, $--color-white);
     }
+  }
+
+  &.is-outline {
+    @include button-plain($background-color);
   }
 }

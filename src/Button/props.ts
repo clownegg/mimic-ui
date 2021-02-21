@@ -27,6 +27,7 @@ export const props = {
       ].includes(val);
     },
   },
+  outline: Boolean,
   loading: Boolean,
   disabled: Boolean,
   autoFocus: Boolean,
