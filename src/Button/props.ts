@@ -1,8 +1,21 @@
 import { PropType } from 'vue';
 
-type ButtonTheme = PropType<
-  'primary' | 'success' | 'warning' | 'danger' | 'dark' | 'default'
->;
+const ButtonThemes = [
+  'primary',
+  'success',
+  'warning',
+  'danger',
+  'hazard',
+  'happiness',
+  'tradition',
+  'info',
+  'light',
+  'dark',
+  '',
+] as const;
+
+type ButtonThemeType = typeof ButtonThemes[number];
+type ButtonTheme = PropType<ButtonThemeType>;
 type ButtonType = PropType<'button' | 'submit' | 'reset'>;
 
 export const props = {
@@ -15,16 +28,9 @@ export const props = {
   },
   theme: {
     type: String as ButtonTheme,
-    default: 'default',
-    validator: (val: string): boolean => {
-      return [
-        'default',
-        'primary',
-        'success',
-        'warning',
-        'danger',
-        'dark',
-      ].includes(val);
+    default: '',
+    validator: (val: ButtonThemeType): boolean => {
+      return ButtonThemes.includes(val);
     },
   },
   outline: Boolean,

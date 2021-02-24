@@ -1,36 +1,41 @@
 $--color-white: #ffffff !default;
 $--color-black: #000000 !default;
 
-$--color-info: #909399 !default;
-$--color-dark: #222222 !default;
 $--color-primary: #409eff !default;
 $--color-success: #67c23a !default;
 $--color-warning: #e6a23c !default;
 $--color-danger: #f56c6c !default;
+$--color-hazard: #946bcb !default;
+$--color-happiness: #ffc0cb !default;
+$--color-tradition: #ae7b52 !default;
+$--color-info: #909399 !default;
+$--color-light: #f8f9fa !default;
+$--color-dark: #212529 !default;
 
-/*
-############################
-  Text
-############################
-*/
+// theme-color
+$theme-colors: (
+  "primary": $--color-primary,
+  "success": $--color-success,
+  "warning": $--color-warning,
+  "danger": $--color-danger,
+  "hazard": $--color-hazard,
+  "happiness": $--color-happiness,
+  "tradition": $--color-tradition,
+  "info": $--color-info,
+  "light": $--color-light,
+  "dark": $--color-dark
+) !default;
 
+// text
 $--color-text-regular: #606266 !default;
 $--color-text-placeholder: #c0c4cc !default;
 
-/*
-############################
-  Border
-############################
-*/
+// border
 $--border-color-base: #dcdfe6 !default;
 $--border-color-light: #e4e7ed !default;
 $--border-color-lighter: #ebeef5 !default;
 
-/*
-############################
-  Button
-############################
-*/
+// button
 $--button-default-font-color: $--color-text-regular !default;
 $--button-default-background-color: $--color-white !default;
 $--button-default-border-color: $--border-color-base !default;
@@ -40,11 +45,7 @@ $--button-disabled-font-color: $--color-text-placeholder !default;
 $--button-disabled-background-color: $--color-white !default;
 $--button-disabled-border-color: $--border-color-lighter !default;
 
-/*
-############################
-  Input
-############################
-*/
+// input
 $--input-font-color: $--color-text-regular !default;
 $--input-background-color: $--color-white !default;
 $--input-border-color: $--border-color-base !default;

@@ -47,23 +47,9 @@
     }
   }
 
-  &--primary {
-    @include button-variant($--color-white, $--color-primary, $--color-primary);
-  }
-
-  &--success {
-    @include button-variant($--color-white, $--color-success, $--color-success);
-  }
-
-  &--warning {
-    @include button-variant($--color-white, $--color-warning, $--color-warning);
-  }
-
-  &--danger {
-    @include button-variant($--color-white, $--color-danger, $--color-danger);
-  }
-
-  &--dark {
-    @include button-variant($--color-white, $--color-dark, $--color-dark);
+  @each $theme, $theme-color in $theme-colors {
+    &--#{$theme} {
+      @include button-variant($--color-white, $theme-color, $theme-color);
+    }
   }
 }
