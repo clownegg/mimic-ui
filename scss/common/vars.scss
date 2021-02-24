@@ -8,8 +8,6 @@ $--color-danger: #f56c6c !default;
 $--color-hazard: #946bcb !default;
 $--color-happiness: #ffc0cb !default;
 $--color-tradition: #ae7b52 !default;
-$--color-info: #909399 !default;
-$--color-light: #f8f9fa !default;
 $--color-dark: #212529 !default;
 
 // theme-color
@@ -21,8 +19,6 @@ $theme-colors: (
   "hazard": $--color-hazard,
   "happiness": $--color-happiness,
   "tradition": $--color-tradition,
-  "info": $--color-info,
-  "light": $--color-light,
   "dark": $--color-dark
 ) !default;
 

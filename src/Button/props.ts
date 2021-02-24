@@ -8,8 +8,6 @@ const ButtonThemes = [
   'hazard',
   'happiness',
   'tradition',
-  'info',
-  'light',
   'dark',
   '',
 ] as const;
@@ -29,8 +27,18 @@ export const props = {
   theme: {
     type: String as ButtonTheme,
     default: '',
-    validator: (val: ButtonThemeType): boolean => {
-      return ButtonThemes.includes(val);
+    validator: (val: string): boolean => {
+      return [
+        'primary',
+        'success',
+        'warning',
+        'danger',
+        'hazard',
+        'happiness',
+        'tradition',
+        'dark',
+        '',
+      ].includes(val);
     },
   },
   outline: Boolean,
