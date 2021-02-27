@@ -1,4 +1,32 @@
-@mixin button-plain($color) {
+@mixin button-text($color) {
+  color: $color;
+  background: transparent;
+  border-color: transparent;
+
+  &:hover {
+    color: $color;
+    background-color: mix($--color-white, $color, 90%);
+    border-color: transparent;
+  }
+
+  &:active {
+    color: $color;
+    background-color: mix($--color-white, $color, 90%);
+    border-color: transparent;
+  }
+
+  &.is-disabled {
+    &,
+    &:hover,
+    &:active {
+      color: mix($--color-white, $color);
+      background: transparent;
+      border-color: transparent;
+    }
+  }
+}
+
+@mixin button-outline($color) {
   color: $color;
   background: mix($--color-white, $color, 90%);
   border-color: mix($--color-white, $color, 60%);
@@ -55,6 +83,10 @@
   }
 
   &.is-outline {
-    @include button-plain($background-color);
+    @include button-outline($background-color);
+  }
+
+  &.is-text {
+    @include button-text($background-color);
   }
 }

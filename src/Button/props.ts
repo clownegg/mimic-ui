@@ -42,6 +42,7 @@ export const props = {
     },
   },
   outline: Boolean,
+  text: Boolean,
   loading: Boolean,
   disabled: Boolean,
   autoFocus: Boolean,

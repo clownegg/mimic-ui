@@ -4,6 +4,7 @@
       'mimic-button',
       theme ? 'mimic-button--' + theme : '',
       {
+        'is-text': text,
         'is-outline': outline,
         'is-disabled': buttonDisabled,
         'is-block': block,

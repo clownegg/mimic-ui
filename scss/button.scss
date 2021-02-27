@@ -47,6 +47,24 @@
     }
   }
 
+  &.is-text {
+    background: transparent;
+    border-color: transparent;
+
+    &:hover {
+      background: $--button-hover-background-color;
+    }
+
+    &:disabled {
+      &,
+      &:hover,
+      &:focus {
+        color: $--button-disabled-font-color;
+        background: $--button-disabled-background-color;
+      }
+    }
+  }
+
   @each $theme, $theme-color in $theme-colors {
     &--#{$theme} {
       @include button-variant($--color-white, $theme-color, $theme-color);
