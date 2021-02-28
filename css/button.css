@@ -35,6 +35,17 @@
   background: #ffffff;
   background-image: none;
 }
+.mimic-button.is-text {
+  background: transparent;
+  border-color: transparent;
+}
+.mimic-button.is-text:hover {
+  background: #f9f9f9;
+}
+.mimic-button.is-text:disabled, .mimic-button.is-text:disabled:hover, .mimic-button.is-text:disabled:focus {
+  color: #c0c4cc;
+  background: #ffffff;
+}
 .mimic-button--primary {
   color: #ffffff;
   background: #409eff;
@@ -74,6 +85,26 @@
   color: #8cc5ff;
   background-color: #ecf5ff;
   border-color: #d9ecff;
+}
+.mimic-button--primary.is-text {
+  color: #409eff;
+  background: transparent;
+  border-color: transparent;
+}
+.mimic-button--primary.is-text:hover {
+  color: #409eff;
+  background-color: #ecf5ff;
+  border-color: transparent;
+}
+.mimic-button--primary.is-text:active {
+  color: #409eff;
+  background-color: #ecf5ff;
+  border-color: transparent;
+}
+.mimic-button--primary.is-text.is-disabled, .mimic-button--primary.is-text.is-disabled:hover, .mimic-button--primary.is-text.is-disabled:active {
+  color: #a0cfff;
+  background: transparent;
+  border-color: transparent;
 }
 .mimic-button--success {
   color: #ffffff;
@@ -115,6 +146,26 @@
   background-color: #f0f9eb;
   border-color: #e1f3d8;
 }
+.mimic-button--success.is-text {
+  color: #67c23a;
+  background: transparent;
+  border-color: transparent;
+}
+.mimic-button--success.is-text:hover {
+  color: #67c23a;
+  background-color: #f0f9eb;
+  border-color: transparent;
+}
+.mimic-button--success.is-text:active {
+  color: #67c23a;
+  background-color: #f0f9eb;
+  border-color: transparent;
+}
+.mimic-button--success.is-text.is-disabled, .mimic-button--success.is-text.is-disabled:hover, .mimic-button--success.is-text.is-disabled:active {
+  color: #b3e19d;
+  background: transparent;
+  border-color: transparent;
+}
 .mimic-button--warning {
   color: #ffffff;
   background: #e6a23c;
@@ -154,6 +205,26 @@
   color: #f0c78a;
   background-color: #fdf6ec;
   border-color: #faecd8;
+}
+.mimic-button--warning.is-text {
+  color: #e6a23c;
+  background: transparent;
+  border-color: transparent;
+}
+.mimic-button--warning.is-text:hover {
+  color: #e6a23c;
+  background-color: #fdf6ec;
+  border-color: transparent;
+}
+.mimic-button--warning.is-text:active {
+  color: #e6a23c;
+  background-color: #fdf6ec;
+  border-color: transparent;
+}
+.mimic-button--warning.is-text.is-disabled, .mimic-button--warning.is-text.is-disabled:hover, .mimic-button--warning.is-text.is-disabled:active {
+  color: #f3d19e;
+  background: transparent;
+  border-color: transparent;
 }
 .mimic-button--danger {
   color: #ffffff;
@@ -195,6 +266,26 @@
   background-color: #fef0f0;
   border-color: #fde2e2;
 }
+.mimic-button--danger.is-text {
+  color: #f56c6c;
+  background: transparent;
+  border-color: transparent;
+}
+.mimic-button--danger.is-text:hover {
+  color: #f56c6c;
+  background-color: #fef0f0;
+  border-color: transparent;
+}
+.mimic-button--danger.is-text:active {
+  color: #f56c6c;
+  background-color: #fef0f0;
+  border-color: transparent;
+}
+.mimic-button--danger.is-text.is-disabled, .mimic-button--danger.is-text.is-disabled:hover, .mimic-button--danger.is-text.is-disabled:active {
+  color: #fab6b6;
+  background: transparent;
+  border-color: transparent;
+}
 .mimic-button--hazard {
   color: #ffffff;
   background: #946bcb;
@@ -234,6 +325,26 @@
   color: #bfa6e0;
   background-color: #f4f0fa;
   border-color: #eae1f5;
+}
+.mimic-button--hazard.is-text {
+  color: #946bcb;
+  background: transparent;
+  border-color: transparent;
+}
+.mimic-button--hazard.is-text:hover {
+  color: #946bcb;
+  background-color: #f4f0fa;
+  border-color: transparent;
+}
+.mimic-button--hazard.is-text:active {
+  color: #946bcb;
+  background-color: #f4f0fa;
+  border-color: transparent;
+}
+.mimic-button--hazard.is-text.is-disabled, .mimic-button--hazard.is-text.is-disabled:hover, .mimic-button--hazard.is-text.is-disabled:active {
+  color: #cab5e5;
+  background: transparent;
+  border-color: transparent;
 }
 .mimic-button--happiness {
   color: #ffffff;
@@ -275,6 +386,26 @@
   background-color: #fff9fa;
   border-color: #fff2f5;
 }
+.mimic-button--happiness.is-text {
+  color: #ffc0cb;
+  background: transparent;
+  border-color: transparent;
+}
+.mimic-button--happiness.is-text:hover {
+  color: #ffc0cb;
+  background-color: #fff9fa;
+  border-color: transparent;
+}
+.mimic-button--happiness.is-text:active {
+  color: #ffc0cb;
+  background-color: #fff9fa;
+  border-color: transparent;
+}
+.mimic-button--happiness.is-text.is-disabled, .mimic-button--happiness.is-text.is-disabled:hover, .mimic-button--happiness.is-text.is-disabled:active {
+  color: #ffe0e5;
+  background: transparent;
+  border-color: transparent;
+}
 .mimic-button--tradition {
   color: #ffffff;
   background: #ae7b52;
@@ -315,6 +446,26 @@
   background-color: #f7f2ee;
   border-color: #efe5dc;
 }
+.mimic-button--tradition.is-text {
+  color: #ae7b52;
+  background: transparent;
+  border-color: transparent;
+}
+.mimic-button--tradition.is-text:hover {
+  color: #ae7b52;
+  background-color: #f7f2ee;
+  border-color: transparent;
+}
+.mimic-button--tradition.is-text:active {
+  color: #ae7b52;
+  background-color: #f7f2ee;
+  border-color: transparent;
+}
+.mimic-button--tradition.is-text.is-disabled, .mimic-button--tradition.is-text.is-disabled:hover, .mimic-button--tradition.is-text.is-disabled:active {
+  color: #d7bda9;
+  background: transparent;
+  border-color: transparent;
+}
 .mimic-button--dark {
   color: #ffffff;
   background: #212529;
@@ -354,6 +505,26 @@
   color: #7a7c7f;
   background-color: #e9e9ea;
   border-color: #d3d3d4;
+}
+.mimic-button--dark.is-text {
+  color: #212529;
+  background: transparent;
+  border-color: transparent;
+}
+.mimic-button--dark.is-text:hover {
+  color: #212529;
+  background-color: #e9e9ea;
+  border-color: transparent;
+}
+.mimic-button--dark.is-text:active {
+  color: #212529;
+  background-color: #e9e9ea;
+  border-color: transparent;
+}
+.mimic-button--dark.is-text.is-disabled, .mimic-button--dark.is-text.is-disabled:hover, .mimic-button--dark.is-text.is-disabled:active {
+  color: #909294;
+  background: transparent;
+  border-color: transparent;
 }
 
 /*# sourceMappingURL=button.css.map */
