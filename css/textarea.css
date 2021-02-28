@@ -1,0 +1,33 @@
+.mimic-textarea {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.mimic-textarea--inner {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: inherit;
+  line-height: 1.5;
+  color: #606266;
+  resize: none;
+  background: #ffffff;
+  border: 1px solid #dcdfe6;
+  border-radius: 4px;
+  transition: border-color 0.2s cubic-bezier(0.645, 0.45, 0.35, 1);
+}
+.mimic-textarea--inner:hover {
+  border-color: #409eff;
+}
+.mimic-textarea--inner:focus {
+  outline: none;
+}
+.mimic-textarea.is-disabled .mimic-textarea--inner {
+  color: #c0c4cc;
+  cursor: not-allowed;
+  background-color: #f5f7fa;
+  border-color: #e4e7ed;
+}
+
+/*# sourceMappingURL=textarea.css.map */

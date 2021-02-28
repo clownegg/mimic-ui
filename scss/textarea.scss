@@ -1,0 +1,40 @@
+@import "./common/vars";
+
+.mimic-textarea {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+
+  &--inner {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: inherit;
+    line-height: 1.5;
+    color: $--input-font-color;
+    resize: none;
+    background: $--color-white;
+    border: 1px solid $--border-color-base;
+    border-radius: 4px;
+    transition: border-color 0.2s cubic-bezier(0.645, 0.45, 0.35, 1);
+
+    &:hover {
+      border-color: $--color-primary;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  // disabled
+  &.is-disabled {
+    .mimic-textarea--inner {
+      color: $--input-disable-text-color;
+      cursor: not-allowed;
+      background-color: $--input-disable-background-color;
+      border-color: $--input-disable-border-color;
+    }
+  }
+}
