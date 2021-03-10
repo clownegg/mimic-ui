@@ -1,6 +1,6 @@
 @import "./common/vars";
 
-.mimic-textarea {
+.mi-textarea {
   position: relative;
   display: inline-block;
   width: 100%;
@@ -30,7 +30,7 @@
 
   // disabled
   &.is-disabled {
-    .mimic-textarea--inner {
+    .mi-textarea--inner {
       color: $--input-disable-text-color;
       cursor: not-allowed;
       background-color: $--input-disable-background-color;

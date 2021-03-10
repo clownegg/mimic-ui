@@ -1,8 +1,8 @@
 <template>
   <button
     :class="[
-      'mimic-button',
-      theme ? 'mimic-button--' + theme : '',
+      'mi-button',
+      theme ? 'mi-button--' + theme : '',
       {
         'is-text': text,
         'is-outline': outline,
@@ -14,6 +14,8 @@
     :autofocus="autoFocus"
     :type="type"
     @click="handleClick"
+    @focus="handleFocus"
+    @blur="handleBlur"
   >
     <slot />
   </button>
@@ -24,9 +26,9 @@ import { computed, defineComponent } from 'vue';
 import { props } from './props';
 
 export default defineComponent({
-  name: 'MimicButton',
+  name: 'MiButton',
   props,
-  emits: ['click'],
+  emits: ['click', 'focus', 'blur'],
   setup(props, ctx) {
     const buttonDisabled = computed(() => {
       return props.disabled || props.loading;
@@ -36,9 +38,19 @@ export default defineComponent({
       ctx.emit('click', event);
     };
 
+    const handleFocus = (event: FocusEvent) => {
+      ctx.emit('focus', event);
+    };
+
+    const handleBlur = (event: FocusEvent) => {
+      ctx.emit('blur', event);
+    };
+
     return {
       buttonDisabled,
       handleClick,
+      handleFocus,
+      handleBlur,
     };
   },
 });

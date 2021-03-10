@@ -1,4 +1,4 @@
-.mimic-button {
+.mi-button {
   box-sizing: border-box;
   display: inline-block;
   padding: 12px 20px;
@@ -16,512 +16,512 @@
   outline: none;
   transition: 0.1s;
 }
-.mimic-button + .mimic-button {
+.mi-button + .mi-button {
   margin-left: 10px;
 }
-.mimic-button:hover {
+.mi-button:hover {
   background: #f9f9f9;
 }
-.mimic-button:active {
+.mi-button:active {
   transform: translateY(0.5px);
 }
-.mimic-button.is-block {
+.mi-button.is-block {
   display: block;
   width: 100%;
 }
-.mimic-button:disabled, .mimic-button:disabled:hover, .mimic-button:disabled:focus {
+.mi-button:disabled, .mi-button:disabled:hover, .mi-button:disabled:focus {
   color: #c0c4cc;
   cursor: not-allowed;
   background: #ffffff;
   background-image: none;
 }
-.mimic-button.is-text {
+.mi-button.is-text {
   background: transparent;
   border-color: transparent;
 }
-.mimic-button.is-text:hover {
+.mi-button.is-text:hover {
   background: #f9f9f9;
 }
-.mimic-button.is-text:disabled, .mimic-button.is-text:disabled:hover, .mimic-button.is-text:disabled:focus {
+.mi-button.is-text:disabled, .mi-button.is-text:disabled:hover, .mi-button.is-text:disabled:focus {
   color: #c0c4cc;
   background: #ffffff;
 }
-.mimic-button--primary {
+.mi-button--primary {
   color: #ffffff;
   background: #409eff;
   border-color: #409eff;
 }
-.mimic-button--primary:hover {
+.mi-button--primary:hover {
   color: #ffffff;
   background: #66b1ff;
   border-color: #66b1ff;
 }
-.mimic-button--primary:active {
+.mi-button--primary:active {
   color: #ffffff;
   background: #53a8ff;
   border-color: #53a8ff;
 }
-.mimic-button--primary.is-disabled, .mimic-button--primary.is-disabled:hover, .mimic-button--primary.is-disabled:focus, .mimic-button--primary.is-disabled:active {
+.mi-button--primary.is-disabled, .mi-button--primary.is-disabled:hover, .mi-button--primary.is-disabled:focus, .mi-button--primary.is-disabled:active {
   color: #ffffff;
   background-color: #a0cfff;
   border-color: #a0cfff;
 }
-.mimic-button--primary.is-outline {
+.mi-button--primary.is-outline {
   color: #409eff;
   background: #ecf5ff;
   border-color: #b3d8ff;
 }
-.mimic-button--primary.is-outline:hover {
+.mi-button--primary.is-outline:hover {
   color: #ffffff;
   background: #409eff;
   border-color: #409eff;
 }
-.mimic-button--primary.is-outline:active {
+.mi-button--primary.is-outline:active {
   color: #ffffff;
   background: #3a8ee6;
   border-color: #337ecc;
 }
-.mimic-button--primary.is-outline.is-disabled, .mimic-button--primary.is-outline.is-disabled:hover, .mimic-button--primary.is-outline.is-disabled:active {
+.mi-button--primary.is-outline.is-disabled, .mi-button--primary.is-outline.is-disabled:hover, .mi-button--primary.is-outline.is-disabled:active {
   color: #8cc5ff;
   background-color: #ecf5ff;
   border-color: #d9ecff;
 }
-.mimic-button--primary.is-text {
+.mi-button--primary.is-text {
   color: #409eff;
   background: transparent;
   border-color: transparent;
 }
-.mimic-button--primary.is-text:hover {
+.mi-button--primary.is-text:hover {
   color: #409eff;
   background-color: #ecf5ff;
   border-color: transparent;
 }
-.mimic-button--primary.is-text:active {
+.mi-button--primary.is-text:active {
   color: #409eff;
   background-color: #ecf5ff;
   border-color: transparent;
 }
-.mimic-button--primary.is-text.is-disabled, .mimic-button--primary.is-text.is-disabled:hover, .mimic-button--primary.is-text.is-disabled:active {
+.mi-button--primary.is-text.is-disabled, .mi-button--primary.is-text.is-disabled:hover, .mi-button--primary.is-text.is-disabled:active {
   color: #a0cfff;
   background: transparent;
   border-color: transparent;
 }
-.mimic-button--success {
+.mi-button--success {
   color: #ffffff;
   background: #67c23a;
   border-color: #67c23a;
 }
-.mimic-button--success:hover {
+.mi-button--success:hover {
   color: #ffffff;
   background: #85ce61;
   border-color: #85ce61;
 }
-.mimic-button--success:active {
+.mi-button--success:active {
   color: #ffffff;
   background: #76c84e;
   border-color: #76c84e;
 }
-.mimic-button--success.is-disabled, .mimic-button--success.is-disabled:hover, .mimic-button--success.is-disabled:focus, .mimic-button--success.is-disabled:active {
+.mi-button--success.is-disabled, .mi-button--success.is-disabled:hover, .mi-button--success.is-disabled:focus, .mi-button--success.is-disabled:active {
   color: #ffffff;
   background-color: #b3e19d;
   border-color: #b3e19d;
 }
-.mimic-button--success.is-outline {
+.mi-button--success.is-outline {
   color: #67c23a;
   background: #f0f9eb;
   border-color: #c2e7b0;
 }
-.mimic-button--success.is-outline:hover {
+.mi-button--success.is-outline:hover {
   color: #ffffff;
   background: #67c23a;
   border-color: #67c23a;
 }
-.mimic-button--success.is-outline:active {
+.mi-button--success.is-outline:active {
   color: #ffffff;
   background: #5daf34;
   border-color: #529b2e;
 }
-.mimic-button--success.is-outline.is-disabled, .mimic-button--success.is-outline.is-disabled:hover, .mimic-button--success.is-outline.is-disabled:active {
+.mi-button--success.is-outline.is-disabled, .mi-button--success.is-outline.is-disabled:hover, .mi-button--success.is-outline.is-disabled:active {
   color: #a4da89;
   background-color: #f0f9eb;
   border-color: #e1f3d8;
 }
-.mimic-button--success.is-text {
+.mi-button--success.is-text {
   color: #67c23a;
   background: transparent;
   border-color: transparent;
 }
-.mimic-button--success.is-text:hover {
+.mi-button--success.is-text:hover {
   color: #67c23a;
   background-color: #f0f9eb;
   border-color: transparent;
 }
-.mimic-button--success.is-text:active {
+.mi-button--success.is-text:active {
   color: #67c23a;
   background-color: #f0f9eb;
   border-color: transparent;
 }
-.mimic-button--success.is-text.is-disabled, .mimic-button--success.is-text.is-disabled:hover, .mimic-button--success.is-text.is-disabled:active {
+.mi-button--success.is-text.is-disabled, .mi-button--success.is-text.is-disabled:hover, .mi-button--success.is-text.is-disabled:active {
   color: #b3e19d;
   background: transparent;
   border-color: transparent;
 }
-.mimic-button--warning {
+.mi-button--warning {
   color: #ffffff;
   background: #e6a23c;
   border-color: #e6a23c;
 }
-.mimic-button--warning:hover {
+.mi-button--warning:hover {
   color: #ffffff;
   background: #ebb563;
   border-color: #ebb563;
 }
-.mimic-button--warning:active {
+.mi-button--warning:active {
   color: #ffffff;
   background: #e9ab50;
   border-color: #e9ab50;
 }
-.mimic-button--warning.is-disabled, .mimic-button--warning.is-disabled:hover, .mimic-button--warning.is-disabled:focus, .mimic-button--warning.is-disabled:active {
+.mi-button--warning.is-disabled, .mi-button--warning.is-disabled:hover, .mi-button--warning.is-disabled:focus, .mi-button--warning.is-disabled:active {
   color: #ffffff;
   background-color: #f3d19e;
   border-color: #f3d19e;
 }
-.mimic-button--warning.is-outline {
+.mi-button--warning.is-outline {
   color: #e6a23c;
   background: #fdf6ec;
   border-color: #f5dab1;
 }
-.mimic-button--warning.is-outline:hover {
+.mi-button--warning.is-outline:hover {
   color: #ffffff;
   background: #e6a23c;
   border-color: #e6a23c;
 }
-.mimic-button--warning.is-outline:active {
+.mi-button--warning.is-outline:active {
   color: #ffffff;
   background: #cf9236;
   border-color: #b88230;
 }
-.mimic-button--warning.is-outline.is-disabled, .mimic-button--warning.is-outline.is-disabled:hover, .mimic-button--warning.is-outline.is-disabled:active {
+.mi-button--warning.is-outline.is-disabled, .mi-button--warning.is-outline.is-disabled:hover, .mi-button--warning.is-outline.is-disabled:active {
   color: #f0c78a;
   background-color: #fdf6ec;
   border-color: #faecd8;
 }
-.mimic-button--warning.is-text {
+.mi-button--warning.is-text {
   color: #e6a23c;
   background: transparent;
   border-color: transparent;
 }
-.mimic-button--warning.is-text:hover {
+.mi-button--warning.is-text:hover {
   color: #e6a23c;
   background-color: #fdf6ec;
   border-color: transparent;
 }
-.mimic-button--warning.is-text:active {
+.mi-button--warning.is-text:active {
   color: #e6a23c;
   background-color: #fdf6ec;
   border-color: transparent;
 }
-.mimic-button--warning.is-text.is-disabled, .mimic-button--warning.is-text.is-disabled:hover, .mimic-button--warning.is-text.is-disabled:active {
+.mi-button--warning.is-text.is-disabled, .mi-button--warning.is-text.is-disabled:hover, .mi-button--warning.is-text.is-disabled:active {
   color: #f3d19e;
   background: transparent;
   border-color: transparent;
 }
-.mimic-button--danger {
+.mi-button--danger {
   color: #ffffff;
   background: #f56c6c;
   border-color: #f56c6c;
 }
-.mimic-button--danger:hover {
+.mi-button--danger:hover {
   color: #ffffff;
   background: #f78989;
   border-color: #f78989;
 }
-.mimic-button--danger:active {
+.mi-button--danger:active {
   color: #ffffff;
   background: #f67b7b;
   border-color: #f67b7b;
 }
-.mimic-button--danger.is-disabled, .mimic-button--danger.is-disabled:hover, .mimic-button--danger.is-disabled:focus, .mimic-button--danger.is-disabled:active {
+.mi-button--danger.is-disabled, .mi-button--danger.is-disabled:hover, .mi-button--danger.is-disabled:focus, .mi-button--danger.is-disabled:active {
   color: #ffffff;
   background-color: #fab6b6;
   border-color: #fab6b6;
 }
-.mimic-button--danger.is-outline {
+.mi-button--danger.is-outline {
   color: #f56c6c;
   background: #fef0f0;
   border-color: #fbc4c4;
 }
-.mimic-button--danger.is-outline:hover {
+.mi-button--danger.is-outline:hover {
   color: #ffffff;
   background: #f56c6c;
   border-color: #f56c6c;
 }
-.mimic-button--danger.is-outline:active {
+.mi-button--danger.is-outline:active {
   color: #ffffff;
   background: #dd6161;
   border-color: #c45656;
 }
-.mimic-button--danger.is-outline.is-disabled, .mimic-button--danger.is-outline.is-disabled:hover, .mimic-button--danger.is-outline.is-disabled:active {
+.mi-button--danger.is-outline.is-disabled, .mi-button--danger.is-outline.is-disabled:hover, .mi-button--danger.is-outline.is-disabled:active {
   color: #f9a7a7;
   background-color: #fef0f0;
   border-color: #fde2e2;
 }
-.mimic-button--danger.is-text {
+.mi-button--danger.is-text {
   color: #f56c6c;
   background: transparent;
   border-color: transparent;
 }
-.mimic-button--danger.is-text:hover {
+.mi-button--danger.is-text:hover {
   color: #f56c6c;
   background-color: #fef0f0;
   border-color: transparent;
 }
-.mimic-button--danger.is-text:active {
+.mi-button--danger.is-text:active {
   color: #f56c6c;
   background-color: #fef0f0;
   border-color: transparent;
 }
-.mimic-button--danger.is-text.is-disabled, .mimic-button--danger.is-text.is-disabled:hover, .mimic-button--danger.is-text.is-disabled:active {
+.mi-button--danger.is-text.is-disabled, .mi-button--danger.is-text.is-disabled:hover, .mi-button--danger.is-text.is-disabled:active {
   color: #fab6b6;
   background: transparent;
   border-color: transparent;
 }
-.mimic-button--hazard {
+.mi-button--hazard {
   color: #ffffff;
   background: #946bcb;
   border-color: #946bcb;
 }
-.mimic-button--hazard:hover {
+.mi-button--hazard:hover {
   color: #ffffff;
   background: #a989d5;
   border-color: #a989d5;
 }
-.mimic-button--hazard:active {
+.mi-button--hazard:active {
   color: #ffffff;
   background: #9f7ad0;
   border-color: #9f7ad0;
 }
-.mimic-button--hazard.is-disabled, .mimic-button--hazard.is-disabled:hover, .mimic-button--hazard.is-disabled:focus, .mimic-button--hazard.is-disabled:active {
+.mi-button--hazard.is-disabled, .mi-button--hazard.is-disabled:hover, .mi-button--hazard.is-disabled:focus, .mi-button--hazard.is-disabled:active {
   color: #ffffff;
   background-color: #cab5e5;
   border-color: #cab5e5;
 }
-.mimic-button--hazard.is-outline {
+.mi-button--hazard.is-outline {
   color: #946bcb;
   background: #f4f0fa;
   border-color: #d4c4ea;
 }
-.mimic-button--hazard.is-outline:hover {
+.mi-button--hazard.is-outline:hover {
   color: #ffffff;
   background: #946bcb;
   border-color: #946bcb;
 }
-.mimic-button--hazard.is-outline:active {
+.mi-button--hazard.is-outline:active {
   color: #ffffff;
   background: #8560b7;
   border-color: #7656a2;
 }
-.mimic-button--hazard.is-outline.is-disabled, .mimic-button--hazard.is-outline.is-disabled:hover, .mimic-button--hazard.is-outline.is-disabled:active {
+.mi-button--hazard.is-outline.is-disabled, .mi-button--hazard.is-outline.is-disabled:hover, .mi-button--hazard.is-outline.is-disabled:active {
   color: #bfa6e0;
   background-color: #f4f0fa;
   border-color: #eae1f5;
 }
-.mimic-button--hazard.is-text {
+.mi-button--hazard.is-text {
   color: #946bcb;
   background: transparent;
   border-color: transparent;
 }
-.mimic-button--hazard.is-text:hover {
+.mi-button--hazard.is-text:hover {
   color: #946bcb;
   background-color: #f4f0fa;
   border-color: transparent;
 }
-.mimic-button--hazard.is-text:active {
+.mi-button--hazard.is-text:active {
   color: #946bcb;
   background-color: #f4f0fa;
   border-color: transparent;
 }
-.mimic-button--hazard.is-text.is-disabled, .mimic-button--hazard.is-text.is-disabled:hover, .mimic-button--hazard.is-text.is-disabled:active {
+.mi-button--hazard.is-text.is-disabled, .mi-button--hazard.is-text.is-disabled:hover, .mi-button--hazard.is-text.is-disabled:active {
   color: #cab5e5;
   background: transparent;
   border-color: transparent;
 }
-.mimic-button--happiness {
+.mi-button--happiness {
   color: #ffffff;
   background: #ffc0cb;
   border-color: #ffc0cb;
 }
-.mimic-button--happiness:hover {
+.mi-button--happiness:hover {
   color: #ffffff;
   background: #ffcdd5;
   border-color: #ffcdd5;
 }
-.mimic-button--happiness:active {
+.mi-button--happiness:active {
   color: #ffffff;
   background: #ffc6d0;
   border-color: #ffc6d0;
 }
-.mimic-button--happiness.is-disabled, .mimic-button--happiness.is-disabled:hover, .mimic-button--happiness.is-disabled:focus, .mimic-button--happiness.is-disabled:active {
+.mi-button--happiness.is-disabled, .mi-button--happiness.is-disabled:hover, .mi-button--happiness.is-disabled:focus, .mi-button--happiness.is-disabled:active {
   color: #ffffff;
   background-color: #ffe0e5;
   border-color: #ffe0e5;
 }
-.mimic-button--happiness.is-outline {
+.mi-button--happiness.is-outline {
   color: #ffc0cb;
   background: #fff9fa;
   border-color: #ffe6ea;
 }
-.mimic-button--happiness.is-outline:hover {
+.mi-button--happiness.is-outline:hover {
   color: #ffffff;
   background: #ffc0cb;
   border-color: #ffc0cb;
 }
-.mimic-button--happiness.is-outline:active {
+.mi-button--happiness.is-outline:active {
   color: #ffffff;
   background: #e6adb7;
   border-color: #cc9aa2;
 }
-.mimic-button--happiness.is-outline.is-disabled, .mimic-button--happiness.is-outline.is-disabled:hover, .mimic-button--happiness.is-outline.is-disabled:active {
+.mi-button--happiness.is-outline.is-disabled, .mi-button--happiness.is-outline.is-disabled:hover, .mi-button--happiness.is-outline.is-disabled:active {
   color: #ffd9e0;
   background-color: #fff9fa;
   border-color: #fff2f5;
 }
-.mimic-button--happiness.is-text {
+.mi-button--happiness.is-text {
   color: #ffc0cb;
   background: transparent;
   border-color: transparent;
 }
-.mimic-button--happiness.is-text:hover {
+.mi-button--happiness.is-text:hover {
   color: #ffc0cb;
   background-color: #fff9fa;
   border-color: transparent;
 }
-.mimic-button--happiness.is-text:active {
+.mi-button--happiness.is-text:active {
   color: #ffc0cb;
   background-color: #fff9fa;
   border-color: transparent;
 }
-.mimic-button--happiness.is-text.is-disabled, .mimic-button--happiness.is-text.is-disabled:hover, .mimic-button--happiness.is-text.is-disabled:active {
+.mi-button--happiness.is-text.is-disabled, .mi-button--happiness.is-text.is-disabled:hover, .mi-button--happiness.is-text.is-disabled:active {
   color: #ffe0e5;
   background: transparent;
   border-color: transparent;
 }
-.mimic-button--tradition {
+.mi-button--tradition {
   color: #ffffff;
   background: #ae7b52;
   border-color: #ae7b52;
 }
-.mimic-button--tradition:hover {
+.mi-button--tradition:hover {
   color: #ffffff;
   background: #be9575;
   border-color: #be9575;
 }
-.mimic-button--tradition:active {
+.mi-button--tradition:active {
   color: #ffffff;
   background: #b68863;
   border-color: #b68863;
 }
-.mimic-button--tradition.is-disabled, .mimic-button--tradition.is-disabled:hover, .mimic-button--tradition.is-disabled:focus, .mimic-button--tradition.is-disabled:active {
+.mi-button--tradition.is-disabled, .mi-button--tradition.is-disabled:hover, .mi-button--tradition.is-disabled:focus, .mi-button--tradition.is-disabled:active {
   color: #ffffff;
   background-color: #d7bda9;
   border-color: #d7bda9;
 }
-.mimic-button--tradition.is-outline {
+.mi-button--tradition.is-outline {
   color: #ae7b52;
   background: #f7f2ee;
   border-color: #dfcaba;
 }
-.mimic-button--tradition.is-outline:hover {
+.mi-button--tradition.is-outline:hover {
   color: #ffffff;
   background: #ae7b52;
   border-color: #ae7b52;
 }
-.mimic-button--tradition.is-outline:active {
+.mi-button--tradition.is-outline:active {
   color: #ffffff;
   background: #9d6f4a;
   border-color: #8b6242;
 }
-.mimic-button--tradition.is-outline.is-disabled, .mimic-button--tradition.is-outline.is-disabled:hover, .mimic-button--tradition.is-outline.is-disabled:active {
+.mi-button--tradition.is-outline.is-disabled, .mi-button--tradition.is-outline.is-disabled:hover, .mi-button--tradition.is-outline.is-disabled:active {
   color: #ceb097;
   background-color: #f7f2ee;
   border-color: #efe5dc;
 }
-.mimic-button--tradition.is-text {
+.mi-button--tradition.is-text {
   color: #ae7b52;
   background: transparent;
   border-color: transparent;
 }
-.mimic-button--tradition.is-text:hover {
+.mi-button--tradition.is-text:hover {
   color: #ae7b52;
   background-color: #f7f2ee;
   border-color: transparent;
 }
-.mimic-button--tradition.is-text:active {
+.mi-button--tradition.is-text:active {
   color: #ae7b52;
   background-color: #f7f2ee;
   border-color: transparent;
 }
-.mimic-button--tradition.is-text.is-disabled, .mimic-button--tradition.is-text.is-disabled:hover, .mimic-button--tradition.is-text.is-disabled:active {
+.mi-button--tradition.is-text.is-disabled, .mi-button--tradition.is-text.is-disabled:hover, .mi-button--tradition.is-text.is-disabled:active {
   color: #d7bda9;
   background: transparent;
   border-color: transparent;
 }
-.mimic-button--dark {
+.mi-button--dark {
   color: #ffffff;
   background: #212529;
   border-color: #212529;
 }
-.mimic-button--dark:hover {
+.mi-button--dark:hover {
   color: #ffffff;
   background: #4d5154;
   border-color: #4d5154;
 }
-.mimic-button--dark:active {
+.mi-button--dark:active {
   color: #ffffff;
   background: #373b3e;
   border-color: #373b3e;
 }
-.mimic-button--dark.is-disabled, .mimic-button--dark.is-disabled:hover, .mimic-button--dark.is-disabled:focus, .mimic-button--dark.is-disabled:active {
+.mi-button--dark.is-disabled, .mi-button--dark.is-disabled:hover, .mi-button--dark.is-disabled:focus, .mi-button--dark.is-disabled:active {
   color: #ffffff;
   background-color: #909294;
   border-color: #909294;
 }
-.mimic-button--dark.is-outline {
+.mi-button--dark.is-outline {
   color: #212529;
   background: #e9e9ea;
   border-color: #a6a8a9;
 }
-.mimic-button--dark.is-outline:hover {
+.mi-button--dark.is-outline:hover {
   color: #ffffff;
   background: #212529;
   border-color: #212529;
 }
-.mimic-button--dark.is-outline:active {
+.mi-button--dark.is-outline:active {
   color: #ffffff;
   background: #1e2125;
   border-color: #1a1e21;
 }
-.mimic-button--dark.is-outline.is-disabled, .mimic-button--dark.is-outline.is-disabled:hover, .mimic-button--dark.is-outline.is-disabled:active {
+.mi-button--dark.is-outline.is-disabled, .mi-button--dark.is-outline.is-disabled:hover, .mi-button--dark.is-outline.is-disabled:active {
   color: #7a7c7f;
   background-color: #e9e9ea;
   border-color: #d3d3d4;
 }
-.mimic-button--dark.is-text {
+.mi-button--dark.is-text {
   color: #212529;
   background: transparent;
   border-color: transparent;
 }
-.mimic-button--dark.is-text:hover {
+.mi-button--dark.is-text:hover {
   color: #212529;
   background-color: #e9e9ea;
   border-color: transparent;
 }
-.mimic-button--dark.is-text:active {
+.mi-button--dark.is-text:active {
   color: #212529;
   background-color: #e9e9ea;
   border-color: transparent;
 }
-.mimic-button--dark.is-text.is-disabled, .mimic-button--dark.is-text.is-disabled:hover, .mimic-button--dark.is-text.is-disabled:active {
+.mi-button--dark.is-text.is-disabled, .mi-button--dark.is-text.is-disabled:hover, .mi-button--dark.is-text.is-disabled:active {
   color: #909294;
   background: transparent;
   border-color: transparent;

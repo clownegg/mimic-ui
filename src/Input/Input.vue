@@ -1,22 +1,22 @@
 <template>
   <div
     :class="[
-      'mimic-input',
+      'mi-input',
       {
         'is-disabled': disabled,
-        'mimic-input-group': $slots.prepend || $slots.append,
-        'mimic-input-group--append': $slots.append,
-        'mimic-input-group--prepend': $slots.prepend,
+        'mi-input-group': $slots.prepend || $slots.append,
+        'mi-input-group--append': $slots.append,
+        'mi-input-group--prepend': $slots.prepend,
       },
     ]"
   >
     <!-- prepend -->
-    <div v-if="$slots.prepend" class="mimic-input--prepend">
+    <div v-if="$slots.prepend" class="mi-input--prepend">
       <slot name="prepend" />
     </div>
 
     <input
-      class="mimic-input--inner"
+      class="mi-input--inner"
       :value="modelValue"
       :name="name"
       :type="type"
@@ -33,7 +33,7 @@
     />
 
     <!-- append -->
-    <div v-if="$slots.append" class="mimic-input--append">
+    <div v-if="$slots.append" class="mi-input--append">
       <slot name="append" />
     </div>
   </div>
@@ -44,7 +44,7 @@ import { defineComponent } from 'vue';
 import { props } from './props';
 
 export default defineComponent({
-  name: 'MimicInput',
+  name: 'MiInput',
   props,
   emits: ['update:modelValue', 'change', 'focus', 'blur', 'keydown'],
   setup(props, ctx) {

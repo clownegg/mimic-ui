@@ -1,3 +1,3 @@
-import MimicInput from './Input.vue';
+import MiInput from './Input.vue';
 
-export { MimicInput };
+export { MiInput };

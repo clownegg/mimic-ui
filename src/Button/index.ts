@@ -1,3 +1,3 @@
-import MimicButton from './Button.vue';
+import MiButton from './Button.vue';
 
-export { MimicButton };
+export { MiButton };

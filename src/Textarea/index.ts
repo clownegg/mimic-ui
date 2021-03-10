@@ -1,3 +1,3 @@
-import MimicTextare from './Textarea.vue';
+import MiTextarea from './Textarea.vue';
 
-export { MimicTextare };
+export { MiTextarea };

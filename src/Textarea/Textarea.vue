@@ -1,14 +1,14 @@
 <template>
   <div
     :class="[
-      'mimic-textarea',
+      'mi-textarea',
       {
         'is-disabled': disabled,
       },
     ]"
   >
     <textarea
-      class="mimic-textarea--inner"
+      class="mi-textarea--inner"
       :value="modelValue"
       :name="name"
       :disabled="disabled"
@@ -31,7 +31,7 @@ import { defineComponent } from 'vue';
 import { props } from './props';
 
 export default defineComponent({
-  name: 'CsTextarea',
+  name: 'MiTextarea',
   props,
   emits: ['update:modelValue', 'change', 'focus', 'blur', 'keydown'],
   setup(props, ctx) {

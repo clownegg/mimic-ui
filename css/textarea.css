@@ -1,9 +1,9 @@
-.mimic-textarea {
+.mi-textarea {
   position: relative;
   display: inline-block;
   width: 100%;
 }
-.mimic-textarea--inner {
+.mi-textarea--inner {
   box-sizing: border-box;
   display: block;
   width: 100%;
@@ -17,13 +17,13 @@
   border-radius: 4px;
   transition: border-color 0.2s cubic-bezier(0.645, 0.45, 0.35, 1);
 }
-.mimic-textarea--inner:hover {
+.mi-textarea--inner:hover {
   border-color: #409eff;
 }
-.mimic-textarea--inner:focus {
+.mi-textarea--inner:focus {
   outline: none;
 }
-.mimic-textarea.is-disabled .mimic-textarea--inner {
+.mi-textarea.is-disabled .mi-textarea--inner {
   color: #c0c4cc;
   cursor: not-allowed;
   background-color: #f5f7fa;

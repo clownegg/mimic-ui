@@ -1,3 +1,4 @@
-export { MimicButton } from './Button';
-export { MimicInput } from './Input';
-export { MimicTextare } from './Textarea';
+export { MiButton } from './Button';
+export { MiInput } from './Input';
+export { MiTextarea } from './Textarea';
+export { MiAlert } from './Alert';

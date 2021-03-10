@@ -1,6 +1,6 @@
 @import "./common/vars";
 
-.mimic-input {
+.mi-input {
   &--inner {
     box-sizing: border-box;
     display: inline-block;
@@ -23,7 +23,7 @@
 
   // disabled
   &.is-disabled {
-    .mimic-input--inner {
+    .mi-input--inner {
       color: $--input-disable-text-color;
       cursor: not-allowed;
       background-color: $--input-disable-background-color;
@@ -32,20 +32,20 @@
   }
 
   // group
-  &.mimic-input-group {
+  &.mi-input-group {
     display: inline-table;
     width: 100%;
     line-height: normal;
     border-spacing: 0;
     border-collapse: separate;
 
-    .mimic-input--inner {
+    .mi-input--inner {
       display: table-cell;
       vertical-align: middle;
     }
 
-    .mimic-input--prepend,
-    .mimic-input--append {
+    .mi-input--prepend,
+    .mi-input--append {
       position: relative;
       display: table-cell;
       width: 1px;
@@ -61,13 +61,13 @@
         outline: none;
       }
 
-      .mimic-button {
+      .mi-button {
         display: inline-block;
         margin: -10px -20px;
         font-size: inherit;
       }
 
-      button.mimic-button {
+      button.mi-button {
         color: inherit;
         background-color: transparent;
         border-color: transparent;
@@ -76,28 +76,28 @@
       }
     }
 
-    .mimic-input--prepend {
+    .mi-input--prepend {
       border-right: 0;
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
     }
 
-    .mimic-input--append {
+    .mi-input--append {
       border-left: 0;
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
     }
   }
 
-  &.mimic-input-group--prepend {
-    .mimic-input--inner {
+  &.mi-input-group--prepend {
+    .mi-input--inner {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
     }
   }
 
-  &.mimic-input-group--append {
-    .mimic-input--inner {
+  &.mi-input-group--append {
+    .mi-input--inner {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
     }
