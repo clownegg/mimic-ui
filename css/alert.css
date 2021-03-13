@@ -4,17 +4,70 @@
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 8px 16px;
+  padding: 0.5rem 1rem;
   margin: 0;
   overflow: hidden;
+  border-radius: 4px;
   transition: opacity 0.2s;
 }
 .mi-alert__close {
   position: absolute;
-  top: 12px;
+  top: 9px;
   right: 16px;
   font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
   cursor: pointer;
+}
+.mi-alert__title {
+  margin: 0;
+  margin-bottom: 0.25rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.mi-alert__description {
+  margin: 0;
+  font-size: 14px;
+}
+.mi-alert--primary {
+  color: #409eff;
+  background: #ecf5ff;
+  border: 1px solid #b3d8ff;
+}
+.mi-alert--success {
+  color: #67c23a;
+  background: #f0f9eb;
+  border: 1px solid #c2e7b0;
+}
+.mi-alert--warning {
+  color: #e6a23c;
+  background: #fdf6ec;
+  border: 1px solid #f5dab1;
+}
+.mi-alert--danger {
+  color: #f56c6c;
+  background: #fef0f0;
+  border: 1px solid #fbc4c4;
+}
+.mi-alert--hazard {
+  color: #946bcb;
+  background: #f4f0fa;
+  border: 1px solid #d4c4ea;
+}
+.mi-alert--happiness {
+  color: #ffc0cb;
+  background: #fff9fa;
+  border: 1px solid #ffe6ea;
+}
+.mi-alert--tradition {
+  color: #ae7b52;
+  background: #f7f2ee;
+  border: 1px solid #dfcaba;
+}
+.mi-alert--dark {
+  color: #212529;
+  background: #e9e9ea;
+  border: 1px solid #a6a8a9;
 }
 
 /*# sourceMappingURL=alert.css.map */

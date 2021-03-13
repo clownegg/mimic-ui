@@ -5,7 +5,7 @@
     role="alert"
   >
     <div class="mi-alert__content">
-      <h3 v-if="title" class="mi-alert__description">
+      <h3 v-if="title" class="mi-alert__title">
         {{ title }}
       </h3>
 
@@ -14,7 +14,7 @@
       </p>
 
       <i v-if="closable" class="mi-alert__close" role="button" @click="close">
-        &times;
+        ×
       </i>
     </div>
   </div>
@@ -28,12 +28,12 @@ export default defineComponent({
   name: 'MiAlert',
   props,
   emits: ['close'],
-  setup(props, { emit }) {
+  setup(props, ctx) {
     const visible = ref(true);
 
     const close = (event: Event) => {
       visible.value = false;
-      emit('close', event);
+      ctx.emit('close', event);
     };
 
     return { visible, close };

@@ -1,4 +1,4 @@
-import {PropType} from "vue";
+import { PropType } from 'vue';
 
 const AlertThemes = [
   'primary',
@@ -17,10 +17,10 @@ export const props = {
   title: String,
   description: String,
   theme: {
-    type: String as PropType<AlertThemeType>
+    type: String as PropType<AlertThemeType>,
   },
   closable: {
     type: Boolean,
-    default: true
-  }
+    default: true,
+  },
 };

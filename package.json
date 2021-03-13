@@ -1,6 +1,6 @@
 {
   "name": "mimic-ui",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -16,13 +16,21 @@
   "scripts": {
     "js:build": "rollup -c",
     "css:build": "sass --style expanded --source-map --embed-sources --no-error-css scss:css",
-    "build": "npm-run-all js:build css:build"
+    "build": "npm-run-all js:build css:build",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {},
   "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@storybook/addon-actions": "^6.2.0-beta.11",
+    "@storybook/addon-essentials": "6.2.0-beta.11",
+    "@storybook/addon-links": "^6.2.0-beta.11",
+    "@storybook/vue3": "^6.2.0-beta.11",
     "@typescript-eslint/eslint-plugin": "^4.17.0",
     "@typescript-eslint/parser": "^4.17.0",
     "@vue/compiler-sfc": "^3.0.7",
+    "babel-loader": "^8.2.2",
     "eslint": "^7.21.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-import": "^2.22.1",
@@ -40,7 +48,8 @@
     "stylelint-config-standard": "^20.0.0",
     "stylelint-scss": "^3.19.0",
     "typescript": "^4.2.2",
-    "vue": "^3.0.5"
+    "vue": "^3.0.5",
+    "vue-loader": "^16.1.2"
   },
   "peerDependencies": {
     "vue": "^3.0.5"
