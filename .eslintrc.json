@@ -39,13 +39,15 @@
         "normal": "always",
         "component": "always"
       }
-    }]
+    }],
+    "vue/singleline-html-element-content-newline": "off"
   },
   "settings": {
     "import/resolver": {
       "node": {
         "extensions": [
           ".ts",
+          ".vue",
           ".tsx",
           ".json"
         ]

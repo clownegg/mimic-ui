@@ -9,6 +9,7 @@
   >
     <textarea
       class="mi-textarea--inner"
+      ref="textareaRef"
       :value="modelValue"
       :name="name"
       :disabled="disabled"
@@ -27,7 +28,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent, ref, onMounted } from 'vue';
 import { props } from './props';
 
 export default defineComponent({
@@ -35,7 +36,17 @@ export default defineComponent({
   props,
   emits: ['update:modelValue', 'change', 'focus', 'blur', 'keydown'],
   setup(props, ctx) {
+    const textareaRef = ref<HTMLTextAreaElement | null>(null);
+
+    const resize = () => {
+      if (!textareaRef.value) return;
+
+      textareaRef.value.style.height = 'auto';
+      textareaRef.value.style.height = `${textareaRef.value.scrollHeight}px`;
+    };
+
     const handleInput = (event: InputEvent) => {
+      resize();
       ctx.emit('update:modelValue', (event.target as HTMLInputElement).value);
     };
 
@@ -55,12 +66,17 @@ export default defineComponent({
       ctx.emit('keydown', event);
     };
 
+    onMounted(() => {
+      resize();
+    });
+
     return {
       handleInput,
       handleChange,
       handleKeydown,
       handleFocus,
       handleBlur,
+      textareaRef,
     };
   },
 });

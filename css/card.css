@@ -1,0 +1,12 @@
+.mi-card {
+  padding: 1.25rem;
+  overflow: hidden;
+  color: #303133;
+  background-color: #ffffff;
+  border: 1px solid #ebeef5;
+  border-radius: 4px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+/*# sourceMappingURL=card.css.map */
